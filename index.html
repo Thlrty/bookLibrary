@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="header">
+    <h2 class="title">Library</h2>
+    <p>This small Library is part of <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a> 
+      and tracks your books. This was created by <strong>Thirty</strong> on August 15th, 2022.</p>
+    <button>Log In</button>
+  </div>
+
+  <div class="row-add" id="books">
+      <div>
+        <label for="book-title">Book Title</label>
+        <input type="text" class="book" name="book-title" id="book">
+      </div>
+      <div>
+        <label for="book-author">Book Author</label>
+        <input type="text" class="author" name="book-author" id="author">
+      </div>
+      <div>
+        <label for="book-pages">Number of Pages</label>
+        <input type="number" class="pages" name="book-pages" id="pages">
+      </div>
+      <div>
+        <label for="book-status">Book Status</label>
+        <select class="isRead" id="isRead">
+          <option value="read">Read</option>
+          <option value="not-read">Not Read</option>
+        </select>
+      </div>
+      <button class="add-button" onclick="pushData()">Add Book</button>
+  </div>
+
+
+  <div class="main">
+
+  </div>
+    
+  <script src="script.js"></script>
+</body>
+</html>
